@@ -139,17 +139,41 @@ function loadStatsPage()
 function loadPlayersPage()
 {
 
-	for(var x = 0; x < players.length ; x++)
-	{
-        var player = document.createElement('a');
-	    player.href = "#";
-	    player.innerHTML =  players[x].name;
-	    player.style.display = 'block';
-		player.index = x;		   
-		player.onclick = function() {switchPlayers(player.index)};	
+	
+        var player0 = document.createElement('a');
+	    player0.href = "#";
+	    player0.innerHTML =  players[0].name;
+	    player0.style.display = 'block';
+		player0.index = 0;		   
+		player0.onclick = function() {switchPlayers(player0.index)};			
+   	    document.getElementById("player_selector").appendChild(player0)	
+
+        var player1 = document.createElement('a');
+	    player1.href = "#";
+        player1.innerHTML =  players[1].name;
+	    player1.style.display = 'block';
+		player1.index = 1;		   
+		player1.onclick = function() {switchPlayers(player1.index)};			
+   	    document.getElementById("player_selector").appendChild(player1)		
+
+        var player2 = document.createElement('a');
+	    player2.href = "#";
+        player2.innerHTML =  players[2].name;
+	    player2.style.display = 'block';
+		player2.index = 2;		   
+		player2.onclick = function() {switchPlayers(player2.index)};			
+   	    document.getElementById("player_selector").appendChild(player2)	
+
+
+		var player3 = document.createElement('a');
+	    player3.href = "#";
+        player3.innerHTML =  players[3].name;
+	    player3.style.display = 'block';
+		player3.index = 3;		   
+		player3.onclick = function() {switchPlayers(player3.index)};	
 		
-   	    document.getElementById("player_selector").appendChild(player)			   
-    }
+   	    document.getElementById("player_selector").appendChild(player3)				
+    
 }	
 
 	
